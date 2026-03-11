@@ -55,6 +55,10 @@
 <button class="flex size-10 items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
 <span class="material-symbols-outlined text-slate-900 dark:text-slate-100">help</span>
 </button>
+<div class="rounded-lg bg-white/70 dark:bg-slate-900/60 border border-primary/20 p-3">
+<p class="text-[10px] uppercase tracking-wider font-bold text-primary">Captured in workflow</p>
+<p class="text-xs text-slate-600 dark:text-slate-300 mt-1">Low side before: 98 PSI • High side before: 318 PSI • Symptom: intermittent cooling failure</p>
+</div>
 </div>
 </div>
 <!-- Progress Section -->
@@ -65,12 +69,12 @@
 <p class="text-slate-900 dark:text-slate-100 text-xl font-bold">Repair Progress</p>
 </div>
 <div class="text-right">
-<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">3/6 Steps</p>
-<p class="text-primary text-xs font-medium">50% Complete</p>
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">4/6 Steps</p>
+<p class="text-primary text-xs font-medium">67% Complete</p>
 </div>
 </div>
 <div class="rounded-full bg-primary/20 h-2.5 w-full overflow-hidden">
-<div class="h-full bg-primary transition-all duration-500" style="width: 50%;"></div>
+<div class="h-full bg-primary transition-all duration-500" style="width: 67%;"></div>
 </div>
 </div>
 <!-- Tasks List -->
@@ -100,22 +104,22 @@
 <div class="size-2 bg-primary rounded-full animate-pulse"></div>
 </div>
 <div class="flex flex-col">
-<p class="text-slate-900 dark:text-slate-100 text-base font-bold">Check suction/discharge pressure levels</p>
-<p class="text-slate-500 dark:text-slate-400 text-sm">Measure suction and discharge lines</p>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold">Capture pre-repair pressure baseline</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Record low/high side before capacitor replacement</p>
 </div>
 </div>
 <div class="grid grid-cols-2 gap-3 mt-1">
 <div class="flex flex-col gap-1">
-<label class="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase px-1">Suction (PSI)</label>
-<input class="w-full rounded-lg border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm focus:ring-primary focus:border-primary" placeholder="0.0" type="text"/>
+<label class="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase px-1">Low Side Before (PSI)</label>
+<input class="w-full rounded-lg border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm focus:ring-primary focus:border-primary" placeholder="0.0" type="text" value="98"/>
 </div>
 <div class="flex flex-col gap-1">
-<label class="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase px-1">Liquid (PSI)</label>
-<input class="w-full rounded-lg border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm focus:ring-primary focus:border-primary" placeholder="0.0" type="text"/>
+<label class="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase px-1">High Side Before (PSI)</label>
+<input class="w-full rounded-lg border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm focus:ring-primary focus:border-primary" placeholder="0.0" type="text" value="318"/>
 </div>
 </div>
 <button class="w-full bg-primary text-white py-2.5 rounded-lg font-bold text-sm shadow-md shadow-primary/20">
-                    Confirm Readings
+                    Confirm Baseline
                 </button>
 </div>
 <!-- Pending Task with Photo Requirement -->
@@ -146,8 +150,8 @@
 <p class="text-xs font-bold text-slate-300">4</p>
 </div>
 <div class="flex flex-col">
-<p class="text-slate-900 dark:text-slate-100 text-base font-medium">Evidence: Equipment overview and completion photos</p>
-<p class="text-slate-400 text-sm">Capture rooftop unit overview before repair and final completion photo after successful test</p>
+<p class="text-slate-900 dark:text-slate-100 text-base font-medium">Evidence: AC-402 overview and completion photos</p>
+<p class="text-slate-400 text-sm">Capture rooftop unit before repair and final photo after pressure normalization test</p>
 </div>
 </div>
 <!-- Future Task -->
@@ -156,8 +160,8 @@
 <p class="text-xs font-bold text-slate-300">5</p>
 </div>
 <div class="flex flex-col">
-<p class="text-slate-900 dark:text-slate-100 text-base font-medium">Run full cooling cycle and verify pressure normalization</p>
-<p class="text-slate-400 text-sm">Locked until previous step is complete</p>
+<p class="text-slate-900 dark:text-slate-100 text-base font-medium">Record post-repair pressure and cooling cycle pass</p>
+<p class="text-slate-400 text-sm">Required to unlock service report submission</p>
 </div>
 </div>
 </div>
