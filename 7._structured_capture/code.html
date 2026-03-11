@@ -39,7 +39,10 @@
 <div class="text-slate-900 dark:text-slate-100 flex size-12 shrink-0 items-center justify-start cursor-pointer">
 <span class="material-symbols-outlined">arrow_back</span>
 </div>
-<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center">Structured Capture</h2>
+<div class="flex-1 text-center">
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">Structured Capture</h2>
+<p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">Job FV-88421 • Hotel Gran Vía • AC-402</p>
+</div>
 <div class="flex w-12 items-center justify-end">
 <button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary text-white">
 <span class="material-symbols-outlined">check</span>
@@ -47,6 +50,18 @@
 </div>
 </div>
 <div class="flex flex-col gap-6 p-4 max-w-2xl mx-auto w-full">
+<section>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary">fact_check</span>
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight">Required Evidence</h3>
+</div>
+<div class="grid grid-cols-1 gap-2 text-sm text-slate-600 dark:text-slate-300">
+<p>• Equipment overview photo</p>
+<p>• Pressure readings</p>
+<p>• Replaced run capacitor photo</p>
+<p>• Completion photo after successful test</p>
+</div>
+</section>
 <!-- Measurements Section -->
 <section>
 <div class="flex items-center gap-2 mb-3">
@@ -105,8 +120,8 @@
 <div class="flex items-center gap-3">
 <div class="bg-primary/10 text-primary w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">1x</div>
 <div>
-<p class="text-slate-900 dark:text-slate-100 font-medium">Capacitor (50uF/450V)</p>
-<p class="text-slate-500 text-xs">SKU: CAP-0092-A</p>
+<p class="text-slate-900 dark:text-slate-100 font-medium">Run Capacitor (45uF/440V)</p>
+<p class="text-slate-500 text-xs">SKU: CAP-AC402-45UF</p>
 </div>
 </div>
 <button class="text-slate-400 hover:text-red-500">
@@ -124,7 +139,7 @@
 <span class="material-symbols-outlined text-primary">engineering</span>
 <h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight">Actions Performed</h3>
 </div>
-<textarea class="form-textarea w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-primary focus:border-primary p-4 min-h-[100px] text-base" placeholder="Describe the work completed..."></textarea>
+<textarea class="form-textarea w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-primary focus:border-primary p-4 min-h-[100px] text-base" placeholder="Describe the work completed (capacitor replaced, pressure normalized, cooling cycle test passed)..."></textarea>
 </section>
 <!-- Voice Note Action -->
 <section class="pb-10">
@@ -142,7 +157,25 @@
 <!-- Sticky Bottom Footer -->
 <div class="fixed bottom-0 left-0 right-0 p-4 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 flex gap-4 max-w-2xl mx-auto w-full">
 <button class="flex-1 py-4 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold rounded-lg uppercase tracking-wider text-sm">Save Draft</button>
-<button class="flex-[2] py-4 bg-primary text-white font-bold rounded-lg uppercase tracking-wider text-sm shadow-md shadow-primary/20">Submit Report</button>
+<button class="flex-[2] py-4 bg-primary text-white font-bold rounded-lg uppercase tracking-wider text-sm shadow-md shadow-primary/20">Continue to Validation</button>
+</div>
+<div class="fixed bottom-0 left-0 right-0 p-2 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 flex gap-2 max-w-2xl mx-auto w-full z-20">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">work</span>
+<p class="text-[11px] font-medium">Jobs</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">task_alt</span>
+<p class="text-[11px] font-medium">Workflow</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">description</span>
+<p class="text-[11px] font-medium">Reports</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-[11px] font-medium">Profile</p>
+</a>
 </div>
 <div class="h-24"></div> <!-- Spacer for footer -->
 </div>
