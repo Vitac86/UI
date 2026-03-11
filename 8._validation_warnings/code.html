@@ -42,6 +42,9 @@
 <h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Job Validation</h2>
 <div class="size-10"></div> <!-- Spacer for centering -->
 </div>
+<div class="px-4 pt-3">
+<p class="text-xs text-slate-500 dark:text-slate-400 text-center">Job #FV-88421 • Hotel Gran Vía, Madrid • AC-402</p>
+</div>
 <!-- Progress Overview -->
 <div class="flex flex-col gap-3 p-4 bg-white dark:bg-slate-900/50 m-4 rounded-xl border border-primary/10">
 <div class="flex gap-6 justify-between items-center">
@@ -67,7 +70,7 @@
 <span class="material-symbols-outlined text-red-600 dark:text-red-400">error</span>
 <p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Missing Photo</p>
 </div>
-<p class="text-slate-600 dark:text-slate-400 text-sm leading-normal">A photo of the repaired unit is mandatory for compliance before submission.</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-normal">Equipment overview photo and completion photo are mandatory for compliance before submission.</p>
 <button class="mt-2 flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-9 px-4 bg-primary text-white gap-2 text-sm font-medium transition-opacity hover:opacity-90">
 <span class="material-symbols-outlined text-lg">add_a_photo</span>
 <span>Upload Now</span>
@@ -85,9 +88,9 @@
 <span class="material-symbols-outlined text-red-600 dark:text-red-400">straighten</span>
 <p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Mandatory Measurement</p>
 </div>
-<p class="text-slate-600 dark:text-slate-400 text-sm">Measurement for <span class="font-bold">Oil Level</span> has not been recorded in the service log.</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Measurement for <span class="font-bold">Discharge Pressure</span> has not been recorded in the service log.</p>
 <div class="flex gap-2">
-<input class="flex-1 bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700 rounded-lg text-sm px-3 focus:ring-primary focus:border-primary" placeholder="Enter oil level (L)" type="number"/>
+<input class="flex-1 bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700 rounded-lg text-sm px-3 focus:ring-primary focus:border-primary" placeholder="Enter discharge pressure (PSIG)" type="number"/>
 <button class="bg-primary/10 text-primary px-4 py-2 rounded-lg text-sm font-bold">Save</button>
 </div>
 </div>
@@ -101,10 +104,10 @@
 <div class="flex items-start gap-3">
 <span class="material-symbols-outlined text-amber-600 dark:text-amber-400 mt-0.5">inventory_2</span>
 <div class="flex flex-col gap-1">
-<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Inventory Inconsistency</p>
-<p class="text-slate-600 dark:text-slate-400 text-sm">Parts used (HEPA Filter X2) don't match initial diagnosis (HEPA Filter X1). Please confirm if this change was intended.</p>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Parts Consistency Warning</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Parts used (run capacitor 45uF) must match the diagnosis of degraded run capacitor with abnormal pressure behavior.</p>
 <div class="flex gap-3 mt-3">
-<button class="text-amber-700 dark:text-amber-400 text-sm font-bold underline decoration-amber-300">Update Diagnosis</button>
+<button class="text-amber-700 dark:text-amber-400 text-sm font-bold underline decoration-amber-300">Update Job Record</button>
 <button class="text-amber-700 dark:text-amber-400 text-sm font-bold underline decoration-amber-300">Acknowledge</button>
 </div>
 </div>
@@ -118,7 +121,7 @@
 <p class="text-xs text-slate-500 dark:text-slate-400 italic">Submit button will be enabled once all critical blocks are resolved.</p>
 </div>
 <button class="w-full bg-slate-300 dark:bg-slate-700 text-slate-500 dark:text-slate-400 font-bold py-4 rounded-xl flex items-center justify-center gap-2 cursor-not-allowed transition-all" disabled="">
-<span>Complete Job</span>
+<span>Submit Final Report</span>
 <span class="material-symbols-outlined">check_circle</span>
 </button>
 </div>
@@ -132,15 +135,15 @@
 </a>
 <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
 <div class="flex h-8 items-center justify-center">
-<span class="material-symbols-outlined">calendar_today</span>
+<span class="material-symbols-outlined">task_alt</span>
 </div>
-<p class="text-xs font-medium leading-normal tracking-[0.015em]">Schedule</p>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Workflow</p>
 </a>
 <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
 <div class="flex h-8 items-center justify-center">
-<span class="material-symbols-outlined">inventory</span>
+<span class="material-symbols-outlined">description</span>
 </div>
-<p class="text-xs font-medium leading-normal tracking-[0.015em]">Assets</p>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Reports</p>
 </a>
 <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
 <div class="flex h-8 items-center justify-center">
