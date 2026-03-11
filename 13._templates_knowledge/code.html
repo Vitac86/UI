@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Knowledge Center - Fieldvance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d33a5",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101522",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6">
+<span class="material-symbols-outlined text-3xl">hub</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">Knowledge Center</h2>
+</div>
+<nav class="flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">SOPs</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary pb-1" href="#">Checklists</a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">Reports</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<label class="flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg overflow-hidden bg-slate-100 dark:bg-slate-800">
+<div class="text-slate-500 flex items-center justify-center pl-4">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full border-none bg-transparent focus:ring-0 text-sm placeholder:text-slate-500" placeholder="Search templates..." value=""/>
+</div>
+</label>
+<div class="bg-primary/10 flex items-center justify-center rounded-full size-10 border border-primary/20">
+<span class="material-symbols-outlined text-primary">person</span>
+</div>
+</div>
+</header>
+<div class="flex flex-1">
+<!-- Sidebar -->
+<aside class="w-64 border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 hidden md:flex flex-col gap-6">
+<div>
+<h1 class="text-primary text-base font-bold">Fieldvance</h1>
+<p class="text-slate-500 text-xs font-normal">Field Service Mgmt</p>
+</div>
+<div class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-sm font-medium">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary" href="#">
+<span class="material-symbols-outlined">description</span>
+<p class="text-sm font-medium">Templates</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<p class="text-sm font-medium">Knowledge Base</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800" href="#">
+<span class="material-symbols-outlined">settings</span>
+<p class="text-sm font-medium">Settings</p>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto bg-background-light dark:bg-background-dark p-8">
+<div class="max-w-5xl mx-auto flex flex-col gap-8">
+<!-- Search and Filter Section -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h2 class="text-2xl font-bold tracking-tight">HVAC Inspection Checklists</h2>
+<button class="bg-primary text-white px-4 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-primary/90 transition-opacity">
+<span class="material-symbols-outlined text-sm">add</span>
+                                Create New Template
+                            </button>
+</div>
+<div class="flex border-b border-slate-200 dark:border-slate-800">
+<button class="px-6 py-3 text-sm font-bold border-b-2 border-primary text-primary">Active Checklists</button>
+<button class="px-6 py-3 text-sm font-medium text-slate-500 hover:text-slate-800 dark:hover:text-slate-200">Drafts</button>
+<button class="px-6 py-3 text-sm font-medium text-slate-500 hover:text-slate-800 dark:hover:text-slate-200">Archived</button>
+</div>
+</div>
+<!-- Template Editor Layout (Simulated View) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Left: Checklist List -->
+<div class="lg:col-span-1 flex flex-col gap-3">
+<div class="relative">
+<input class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg pl-10 pr-4 py-2 text-sm" placeholder="Filter manuals..."/>
+<span class="material-symbols-outlined absolute left-3 top-2 text-slate-400">filter_list</span>
+</div>
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
+<div class="p-4 border-b border-slate-100 dark:border-slate-800 flex items-center gap-3 bg-primary/5">
+<span class="material-symbols-outlined text-primary">ac_unit</span>
+<div>
+<p class="text-sm font-bold">Residential AC Annual</p>
+<p class="text-xs text-slate-500">Last updated: 2d ago</p>
+</div>
+</div>
+<div class="p-4 border-b border-slate-100 dark:border-slate-800 flex items-center gap-3 hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer">
+<span class="material-symbols-outlined text-slate-400">heat_pump</span>
+<div>
+<p class="text-sm font-medium">Commercial Boiler System</p>
+<p class="text-xs text-slate-500">v2.4 • 18 items</p>
+</div>
+</div>
+<div class="p-4 border-b border-slate-100 dark:border-slate-800 flex items-center gap-3 hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer">
+<span class="material-symbols-outlined text-slate-400">vibration</span>
+<div>
+<p class="text-sm font-medium">Compressor Noise Audit</p>
+<p class="text-xs text-slate-500">v1.0 • 5 items</p>
+</div>
+</div>
+<div class="p-4 flex items-center gap-3 hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer">
+<span class="material-symbols-outlined text-slate-400">air</span>
+<div>
+<p class="text-sm font-medium">Ductwork Seal Inspection</p>
+<p class="text-xs text-slate-500">v3.2 • 12 items</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Editor View -->
+<div class="lg:col-span-2">
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm flex flex-col">
+<div class="p-6 border-b border-slate-200 dark:border-slate-800 flex justify-between items-center">
+<div>
+<h3 class="text-lg font-bold">Edit: Residential AC Annual Maintenance</h3>
+<p class="text-sm text-slate-500">SOP Template #HV-004</p>
+</div>
+<div class="flex gap-2">
+<button class="px-4 py-2 border border-slate-200 dark:border-slate-800 rounded-lg text-sm font-medium">Cancel</button>
+<button class="px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium">Save Changes</button>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-6">
+<!-- Section Header -->
+<div class="flex items-center gap-4 group">
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary cursor-move">drag_indicator</span>
+<input class="flex-1 font-bold text-lg border-none focus:ring-1 focus:ring-primary/20 rounded-lg px-2 py-1" type="text" value="Pre-Inspection &amp; Safety"/>
+<button class="text-slate-400 hover:text-red-500"><span class="material-symbols-outlined">delete</span></button>
+</div>
+<!-- Checklist Item -->
+<div class="ml-10 space-y-4">
+<div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-100 dark:border-slate-700">
+<span class="material-symbols-outlined text-slate-300">drag_indicator</span>
+<div class="size-5 border-2 border-slate-300 rounded flex-shrink-0"></div>
+<input class="bg-transparent border-none focus:ring-0 text-sm flex-1" type="text" value="Verify power source is disconnected and locked out"/>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-slate-400 text-sm cursor-pointer">photo_camera</span>
+<span class="material-symbols-outlined text-slate-400 text-sm cursor-pointer">notes</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-100 dark:border-slate-700">
+<span class="material-symbols-outlined text-slate-300">drag_indicator</span>
+<div class="size-5 border-2 border-slate-300 rounded flex-shrink-0"></div>
+<input class="bg-transparent border-none focus:ring-0 text-sm flex-1" type="text" value="Inspect thermostat settings and battery level"/>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-slate-400 text-sm cursor-pointer">photo_camera</span>
+<span class="material-symbols-outlined text-slate-400 text-sm cursor-pointer">notes</span>
+</div>
+</div>
+<button class="flex items-center gap-2 text-primary text-sm font-medium ml-8 hover:underline">
+<span class="material-symbols-outlined text-sm">add_circle</span>
+                                            Add task to section
+                                        </button>
+</div>
+<!-- New Section -->
+<div class="flex items-center gap-4 mt-4">
+<span class="material-symbols-outlined text-slate-300">drag_indicator</span>
+<input class="flex-1 font-bold text-lg border-none focus:ring-1 focus:ring-primary/20 rounded-lg px-2 py-1" type="text" value="Condenser Unit Check"/>
+</div>
+<div class="ml-10 p-4 border-2 border-dashed border-slate-200 dark:border-slate-800 rounded-xl flex flex-col items-center justify-center gap-2 text-slate-400">
+<span class="material-symbols-outlined text-3xl">playlist_add</span>
+<p class="text-sm">Drag and drop components or click to add</p>
+</div>
+</div>
+<div class="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-b-xl border-t border-slate-200 dark:border-slate-800">
+<div class="flex gap-4">
+<button class="flex-1 py-3 border border-slate-300 dark:border-slate-600 rounded-lg flex items-center justify-center gap-2 text-sm font-medium hover:bg-white dark:hover:bg-slate-800">
+<span class="material-symbols-outlined">add</span>
+                                            Add New Section
+                                        </button>
+<button class="flex-1 py-3 border border-slate-300 dark:border-slate-600 rounded-lg flex items-center justify-center gap-2 text-sm font-medium hover:bg-white dark:hover:bg-slate-800">
+<span class="material-symbols-outlined">import_contacts</span>
+                                            Import from Knowledge Base
+                                        </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Knowledge Base Snippets -->
+<section class="mt-8">
+<h3 class="text-lg font-bold mb-4">Related Knowledge Resources</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary">menu_book</span>
+<h4 class="font-bold text-sm">Safety Protocols v3</h4>
+<p class="text-xs text-slate-500">Standard OSHA guidelines for high-voltage HVAC systems.</p>
+<a class="text-primary text-xs font-bold mt-2" href="#">View Guide</a>
+</div>
+<div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary">car_repair</span>
+<h4 class="font-bold text-sm">Tool Requirements</h4>
+<p class="text-xs text-slate-500">Master list of calibrated equipment required for annual audits.</p>
+<a class="text-primary text-xs font-bold mt-2" href="#">View Guide</a>
+</div>
+<div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary">bar_chart</span>
+<h4 class="font-bold text-sm">Reporting Standards</h4>
+<p class="text-xs text-slate-500">How to properly structure photo evidence in the client report.</p>
+<a class="text-primary text-xs font-bold mt-2" href="#">View Guide</a>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body></html>

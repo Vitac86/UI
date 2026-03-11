@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fieldvance AI Pre-Dispatch Brief</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#0d33a5",
+                "background-light": "#f6f6f8",
+                "background-dark": "#101522",
+              },
+              fontFamily: {
+                "display": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<!-- TopAppBar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between border-b border-slate-200 dark:border-slate-800">
+<div class="text-primary flex size-12 shrink-0 items-center justify-start cursor-pointer">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">AI Pre-Dispatch Brief</h2>
+<p class="text-xs text-slate-500 dark:text-slate-400">Job #VF-9021 • Fieldvance Intelligence</p>
+</div>
+<div class="flex w-12 items-center justify-end">
+<button class="flex items-center justify-center rounded h-12 bg-transparent text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Asset Overview Section -->
+<div class="p-4 bg-white dark:bg-slate-900/50 border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-4">
+<div class="h-16 w-16 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">hvac</span>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100">Carrier Infinity 19VS</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400">Serial: 1219X48201</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex items-center rounded-full bg-red-100 dark:bg-red-900/30 px-2 py-0.5 text-xs font-medium text-red-700 dark:text-red-400">Critical Fault</span>
+<span class="inline-flex items-center rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">AI Analyzed</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Safety Alerts Section (Highlighted) -->
+<div class="m-4 p-4 rounded-xl bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800/50">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-orange-600 dark:text-orange-400">warning</span>
+<div>
+<h4 class="text-sm font-bold text-orange-800 dark:text-orange-200 uppercase tracking-wider leading-none mb-1">Safety Notes</h4>
+<p class="text-sm text-orange-700 dark:text-orange-300">High voltage area detected. Discharge capacitor before handling. Site has restricted access (Roof Hatch required).</p>
+</div>
+</div>
+</div>
+<!-- Likely Causes Section -->
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold px-4 pb-2 pt-2">AI Insights: Likely Causes</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3 p-4 pt-1">
+<div class="flex flex-1 gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 p-4 flex-col">
+<div class="flex justify-between items-start">
+<div class="text-primary bg-primary/10 p-2 rounded-lg">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<span class="text-xs font-bold text-primary">92% CONFIDENCE</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-slate-900 dark:text-slate-100 text-base font-bold">Faulty Capacitor</h2>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-normal">Diagnostic log shows repetitive motor start failures consistent with a 45uF capacitor drop.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 p-4 flex-col">
+<div class="flex justify-between items-start">
+<div class="text-slate-500 bg-slate-100 dark:bg-slate-800 p-2 rounded-lg">
+<span class="material-symbols-outlined">sensors</span>
+</div>
+<span class="text-xs font-bold text-slate-500">15% CONFIDENCE</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-slate-900 dark:text-slate-100 text-base font-bold">Sensor Error</h2>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-normal">Intermittent signal loss detected on OAT sensor. Check wiring harness for corrosion.</p>
+</div>
+</div>
+</div>
+<!-- Required Tools & Parts -->
+<div class="px-4 pt-4">
+<div class="flex items-center justify-between mb-3">
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold">Checklist: Tools &amp; Parts</h2>
+<span class="text-xs font-medium text-slate-500 uppercase tracking-widest">3 Items Total</span>
+</div>
+<div class="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-xl divide-y divide-slate-100 dark:divide-slate-800">
+<label class="flex items-center gap-x-4 p-4 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<div class="relative flex items-center">
+<input class="h-6 w-6 rounded-md border-slate-300 dark:border-slate-700 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-primary focus:ring-offset-0 focus:outline-none transition-all" type="checkbox"/>
+</div>
+<div class="flex flex-col">
+<p class="text-slate-900 dark:text-slate-100 text-base font-medium">Digital Multimeter</p>
+<p class="text-xs text-slate-500">Required for capacitance testing</p>
+</div>
+<span class="ml-auto material-symbols-outlined text-slate-400">build</span>
+</label>
+<label class="flex items-center gap-x-4 p-4 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<div class="relative flex items-center">
+<input class="h-6 w-6 rounded-md border-slate-300 dark:border-slate-700 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-primary focus:ring-offset-0 focus:outline-none transition-all" type="checkbox"/>
+</div>
+<div class="flex flex-col">
+<p class="text-slate-900 dark:text-slate-100 text-base font-medium">Refrigerant R410A</p>
+<p class="text-xs text-slate-500">Recommended based on pressure trends</p>
+</div>
+<span class="ml-auto material-symbols-outlined text-slate-400">propane_tank</span>
+</label>
+<label class="flex items-center gap-x-4 p-4 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<div class="relative flex items-center">
+<input class="h-6 w-6 rounded-md border-slate-300 dark:border-slate-700 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-primary focus:ring-offset-0 focus:outline-none transition-all" type="checkbox"/>
+</div>
+<div class="flex flex-col">
+<p class="text-slate-900 dark:text-slate-100 text-base font-medium">Replacement Capacitor (45uF)</p>
+<p class="text-xs text-slate-500">Specific match for unit model serial</p>
+</div>
+<span class="ml-auto material-symbols-outlined text-slate-400">inventory_2</span>
+</label>
+</div>
+</div>
+<!-- Map Snippet for Context -->
+<div class="px-4 py-6">
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-3">Service Location</h2>
+<div class="relative h-48 w-full rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover opacity-80 dark:opacity-50 grayscale" data-alt="Modern urban map with navigation pin" data-location="San Francisco" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcz95bqHVDVk8nVmaXItUf-olEbaZKjkVj-lIcG3lCNzYjQpL8darZfqwvavBLzMxwA-mdIBvwgmkm6iAhk8zS05BmLhRK4jSiolQrhbfxv6GV3wNs1qyQxZ_nR07i_sJA9di_9-flULCclY1V85jIuXXWuUVHvuB7Dku8Foj4sCd6RlYV8wjtcZ0mM9AxNH3GCutBnOYT5TxVqy2KiQD5iwZrmXXU2aDbl0IjMrlBllaoYJNe-Gh3SRiMvRr5Nu4nY7k6BW253k0h"/>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="bg-primary text-white p-2 rounded-full shadow-lg border-2 border-white ring-4 ring-primary/20">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm p-3 rounded-lg shadow-sm">
+<p class="text-xs font-bold text-slate-900 dark:text-slate-100">842 Market St</p>
+<p class="text-[10px] text-slate-500 dark:text-slate-400">ETA: 14 Mins (Heavy Traffic)</p>
+</div>
+</div>
+</div>
+<!-- Footer Action Button -->
+<div class="mt-auto p-4 pb-8 sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">navigation</span>
+                Start Dispatch to Site
+            </button>
+</div>
+<div class="h-4 bg-background-light dark:bg-background-dark"></div>
+</div>
+</body></html>

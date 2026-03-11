@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fieldvance - Technician Jobs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d33a5",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101522",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-10 flex items-center bg-background-light dark:bg-background-dark border-b border-primary/10 p-4 justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">menu</span>
+<h1 class="text-slate-900 dark:text-slate-100 text-xl font-bold tracking-tight">Today's Jobs</h1>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1.5 px-3 py-1 bg-green-100 dark:bg-green-900/30 rounded-full">
+<span class="material-symbols-outlined text-green-600 dark:text-green-400 text-sm">cloud_done</span>
+<span class="text-green-700 dark:text-green-300 text-xs font-semibold uppercase tracking-wider">Synced</span>
+</div>
+</div>
+</header>
+<nav class="bg-background-light dark:bg-background-dark">
+<div class="flex border-b border-primary/10 px-4 gap-8">
+<a class="flex flex-col items-center justify-center border-b-2 border-primary text-primary pb-3 pt-4" href="#">
+<p class="text-sm font-bold tracking-wide">All Jobs (5)</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 dark:text-slate-400 pb-3 pt-4" href="#">
+<p class="text-sm font-medium tracking-wide">In Progress</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 dark:text-slate-400 pb-3 pt-4" href="#">
+<p class="text-sm font-medium tracking-wide">Pending</p>
+</a>
+</div>
+</nav>
+<main class="flex-1 p-4 space-y-4">
+<div class="flex items-center justify-between pb-2">
+<h2 class="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-widest">Friday, October 25 • Madrid</h2>
+<span class="text-xs font-medium text-primary">Map View</span>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white dark:bg-slate-900 p-4 shadow-sm border border-primary/5">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300">URGENT</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-medium">08:00 - 10:00</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">AC Unit Leak - Juan Garcia</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                            Calle de Serrano 45, 28001 Madrid
+                        </p>
+</div>
+<div class="w-20 h-20 bg-primary/10 rounded-lg flex items-center justify-center overflow-hidden">
+<img class="object-cover w-full h-full opacity-80" data-alt="Technical HVAC equipment close-up view" data-location="Madrid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByFko9PYJr2pNqZ2d7W-sxRQaKjv_c-6AlnyrO5WU4c09plVEKsGHNnn2PPARC5p1F3XolcwTiX7OXAKZYZJ7CViJD76ve4sCoBakTdxiEyo6_VhZ6XVChLRYhgC5Rg0vTHgdksWFUKxuTbiV1eo5knKSRXaFa7Q02sqW3GpYZkoi-NYDLIawWlEjc45JW3z-j7gmCbV7fZrAWpySGXniYW9NgzthjAZ2tnqbkPnngRgzbm3WCInOZUuGscdboABJoTfWfs2_Ox3D_"/>
+</div>
+</div>
+<div class="flex gap-2 pt-2">
+<button class="flex-1 flex items-center justify-center gap-2 bg-primary text-white font-bold py-2.5 rounded-lg text-sm transition-colors hover:bg-primary/90">
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+                        Start Job
+                    </button>
+<button class="px-3 border border-primary/20 text-primary dark:text-primary/80 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">directions</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white dark:bg-slate-900 p-4 shadow-sm border border-primary/5 border-l-4 border-l-blue-500">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300 uppercase tracking-tighter">In Progress</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-medium">10:30 - 12:00</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">Boiler Maintenance - Elena Rivas</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                            Paseo de la Castellana 12, Madrid
+                        </p>
+</div>
+<div class="w-20 h-20 bg-primary/10 rounded-lg flex items-center justify-center overflow-hidden">
+<img class="object-cover w-full h-full opacity-80" data-alt="Indoor boiler system in a utility room" data-location="Madrid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-xAgjErR5MJwpsieuYMrZlAIpg6yFpRDte0vXQxsIi8UPz_MLVviKrw4p-KdZAZBj-4Rqql3jZ09xdKvCj2qhS3a2aSA6Msia7ooAOwqBPicauAaOTPVyzsdgrFx6P2sFftkTjW8ndKAlCO3Yf_2CH9ZoEQ6Az9RB-SSxxJCVEj8NTHNDcTpKA-J1pB3WFZUjHatGMzkD55PbQnqn8VlfhDAmXVA5xC9tLPGT35NTn-8_GT3YMepFPQtTJ1crfFtTOTkJszrT9ag7"/>
+</div>
+</div>
+<div class="flex gap-2 pt-2">
+<button class="flex-1 flex items-center justify-center gap-2 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 font-bold py-2.5 rounded-lg text-sm">
+<span class="material-symbols-outlined text-lg">edit_note</span>
+                        View Checklist
+                    </button>
+<button class="px-3 bg-primary text-white rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">check_circle</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white dark:bg-slate-900 p-4 shadow-sm border border-primary/5 opacity-80">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 uppercase tracking-tighter">Scheduled</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-medium">14:00 - 15:30</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold">Pipe Inspection - Hotel Ritz</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                            Plaza de la Lealtad 5, Madrid
+                        </p>
+</div>
+<div class="w-20 h-20 bg-primary/10 rounded-lg flex items-center justify-center overflow-hidden">
+<img class="object-cover w-full h-full opacity-80" data-alt="Industrial plumbing pipes in a hotel basement" data-location="Madrid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY7eI4eh6eRZBVqRD5weM4zjaFMY698dgvIKiICtp8bKZxQ8Bst7bZ4Q90lhK15xo2xg-uRCrSOg44bb6i6mKLLzHSTkEXRPpCJX5S7tl-_pEuZjt9NabZb4Zm-HYZ-q_O8ZEhNMuEoKmrCb_CFstejn5ClTG-LlOHC6aNR01SU1xYwFf6wvDUPuwYiZtBy5qx1ZlFsW-Y3oYDi3mNCNq11a2TAHwHpgdl38acibyElPG57rWSFnP1dxfJO40M_HZHsUGGdbBeDsmI"/>
+</div>
+</div>
+<div class="flex gap-2 pt-2">
+<button class="flex-1 flex items-center justify-center gap-2 bg-primary/10 text-primary dark:text-primary font-bold py-2.5 rounded-lg text-sm">
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+                        Start Job
+                    </button>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 z-10 flex border-t border-primary/10 bg-background-light dark:bg-background-dark px-4 pb-4 pt-2 shadow-lg">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-1">assignment</span>
+<p class="text-xs font-bold leading-normal tracking-wide">Jobs</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">group</span>
+<p class="text-xs font-medium leading-normal tracking-wide">Customers</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<p class="text-xs font-medium leading-normal tracking-wide">Inventory</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium leading-normal tracking-wide">Profile</p>
+</a>
+</footer>
+</div>
+</body></html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d33a5",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101522",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<title>Fieldvance - Service Report Preview</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden max-w-4xl mx-auto shadow-sm">
+<!-- Header -->
+<header class="flex items-center bg-white dark:bg-slate-900 p-4 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-10 justify-between">
+<div class="text-slate-900 dark:text-slate-100 flex size-10 shrink-0 items-center justify-center cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg">
+<span class="material-symbols-outlined">close</span>
+</div>
+<div class="flex flex-col items-center">
+<h1 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">Service Report Preview</h1>
+<span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Job ID: #FV-88429</span>
+</div>
+<div class="flex w-10 items-center justify-end">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-transparent text-slate-900 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</header>
+<!-- Sync Status -->
+<div class="flex flex-col gap-2 p-4 bg-white dark:bg-slate-900 mb-4 border-b border-slate-200 dark:border-slate-800">
+<div class="flex gap-6 justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600 text-sm">cloud_done</span>
+<p class="text-slate-900 dark:text-slate-100 text-sm font-semibold uppercase tracking-wider">Cloud Sync Status</p>
+</div>
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">100%</p>
+</div>
+<div class="rounded-full bg-slate-200 dark:bg-slate-700 h-1.5 overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 100%;"></div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-[11px] font-medium italic">Last updated: Just now (Secure connection)</p>
+</div>
+<main class="space-y-4 p-4 lg:p-6 bg-white dark:bg-slate-900 flex-1">
+<!-- Work Performed Section -->
+<section class="border-l-4 border-primary pl-4 py-1">
+<h3 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-widest mb-2">Work Performed</h3>
+<p class="text-slate-700 dark:text-slate-300 text-base leading-relaxed">
+                    Completed comprehensive HVAC inspection on Zone B rooftop unit. Replaced worn drive belt (Model B-42), lubricated all primary blower bearings, and chemically cleaned condenser coils. System recalibrated and tested for optimal thermal efficiency. Operating at peak performance within OEM specifications.
+                </p>
+</section>
+<div class="h-px bg-slate-100 dark:bg-slate-800 my-6"></div>
+<!-- Parts List Table -->
+<section>
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-widest">Parts &amp; Materials</h3>
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-0.5 rounded uppercase">2 Items</span>
+</div>
+<div class="overflow-hidden rounded-lg border border-slate-200 dark:border-slate-800">
+<table class="w-full text-left text-sm border-collapse">
+<thead class="bg-slate-50 dark:bg-slate-800/50">
+<tr>
+<th class="p-3 font-bold text-slate-500 dark:text-slate-400">Description</th>
+<th class="p-3 font-bold text-slate-500 dark:text-slate-400 text-right">Qty</th>
+<th class="p-3 font-bold text-slate-500 dark:text-slate-400 text-right">Price</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+<tr>
+<td class="p-3 text-slate-900 dark:text-slate-100 font-medium">V-Belt Industrial B-42</td>
+<td class="p-3 text-slate-700 dark:text-slate-300 text-right">1</td>
+<td class="p-3 text-slate-700 dark:text-slate-300 text-right">$45.00</td>
+</tr>
+<tr>
+<td class="p-3 text-slate-900 dark:text-slate-100 font-medium">Coil Cleaner Concentrate (1L)</td>
+<td class="p-3 text-slate-700 dark:text-slate-300 text-right">2</td>
+<td class="p-3 text-slate-700 dark:text-slate-300 text-right">$24.50</td>
+</tr>
+</tbody>
+<tfoot class="bg-slate-50/50 dark:bg-slate-800/30">
+<tr>
+<td class="p-3 font-bold text-slate-900 dark:text-slate-100 text-right" colspan="2">Subtotal</td>
+<td class="p-3 font-bold text-slate-900 dark:text-slate-100 text-right">$94.00</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</section>
+<!-- Measurements Grid -->
+<section class="pt-4">
+<h3 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-widest mb-4">Technical Measurements</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1">Amperage Draw</p>
+<p class="text-lg font-bold text-primary">14.2A</p>
+</div>
+<div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1">PSI Low Side</p>
+<p class="text-lg font-bold text-primary">118 PSI</p>
+</div>
+<div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1">PSI High Side</p>
+<p class="text-lg font-bold text-primary">325 PSI</p>
+</div>
+<div class="p-3 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-bold mb-1">Delta T</p>
+<p class="text-lg font-bold text-primary">20.5°F</p>
+</div>
+</div>
+</section>
+<!-- Photos Section -->
+<section class="pt-4 pb-8">
+<h3 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-widest mb-4">Job Photos</h3>
+<div class="grid grid-cols-2 gap-3">
+<div class="relative group">
+<img alt="Rooftop HVAC unit maintenance" class="rounded-lg w-full h-40 object-cover border border-slate-200 dark:border-slate-700" data-alt="Professional photo of an industrial rooftop HVAC unit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4AP513VKqRsE3yoFo3_qCgCs4eQCmtR6R63K2cdMEIVt0KiHQsvmBrO91Ew1BAqIRMlz-jvYP9ha5w4O_w_OHH_NOT6F_RFe9QKpg3oozALgiMm9-5-knSFoGGmBHIQUun8jbBVxemN8MlY_RGT2xWpdKacqb2pplYVbhBLB35j1VN3TBFhnSVSf63RrElTS7BB_hID0h_VAqAQT97bVZFrmxsbDcR75jM1wj6VsqDyOk5WrtmPfR6U_9zlZsCVwd4PMOHQV7Ig1z"/>
+<div class="absolute bottom-2 left-2 bg-black/60 text-white text-[10px] px-2 py-1 rounded-full backdrop-blur-sm">Before Maintenance</div>
+</div>
+<div class="relative group">
+<img alt="Cleaned HVAC coils" class="rounded-lg w-full h-40 object-cover border border-slate-200 dark:border-slate-700" data-alt="Close up view of clean condenser coils after service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC8DaBAX00TolfFikVvcwSjpEBe3yas0Tx5OJaCxydaF96PCKzEGos3t0N-AUQ3bErkSrjNdEzMjIAiXSLvHvCO-qezlr03SRPBogcbkt-iaKrbdkGfAw5KsZjZR8ozQ2LBqfzuL-utuK2XKQIcU3aEJK9U4HJQJG4op31PjXnikGZtNyNAHteOAW3Pq4Hfdm9CBAsx74OhX7nPh6QPOd-L561IFJvRAL9iT2UsDUL3PWr0WUIIl3GldIPQ1oXPGBw7xClREErPyBK"/>
+<div class="absolute bottom-2 left-2 bg-black/60 text-white text-[10px] px-2 py-1 rounded-full backdrop-blur-sm">After Service</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Action Area -->
+<footer class="sticky bottom-0 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md p-4 border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-2 mb-1 px-1">
+<input class="rounded border-slate-300 text-primary focus:ring-primary h-4 w-4" id="confirm" type="checkbox"/>
+<label class="text-xs text-slate-600 dark:text-slate-400" for="confirm">I confirm that the work above has been completed to the client's satisfaction.</label>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-xl">verified</span>
+                    Review and Submit Report
+                </button>
+</div>
+</footer>
+</div>
+</body></html>

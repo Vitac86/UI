@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#0d33a5",
+                "background-light": "#f6f6f8",
+                "background-dark": "#101522",
+              },
+              fontFamily: {
+                "display": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-size: 24px; }
+    </style>
+<title>Quality &amp; Review | Fieldvance</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 bg-white dark:bg-slate-900 px-6 py-3 lg:px-10">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 flex items-center justify-center bg-primary rounded text-white">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">Fieldvance</h2>
+</div>
+<div class="flex flex-1 justify-end gap-4 lg:gap-8 items-center">
+<label class="hidden md:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded h-full">
+<div class="text-slate-500 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-l">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-0 h-full placeholder:text-slate-500 px-4 rounded-r pl-2 text-sm" placeholder="Search reports..." value=""/>
+</div>
+</label>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded h-10 w-10 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+<button class="flex items-center justify-center rounded h-10 w-10 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-primary/10 transition-colors relative">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-900"></span>
+</button>
+</div>
+<div class="bg-primary/20 bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-primary/20" data-alt="User profile avatar portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqWsdDO_q1xBT2E74pFfegNxHXZxHWOITN3nQmEa3niwfplm5WyB3Q4eHf4ECUPtrz2v_k4aH_1tvbUS_0A9PTm2bozqiQfcbG2IJUi3E5moMBpZhlLIK70FaFs00ZOw0L0tbqYgxNQ5_52stCCy8WlAfdjwuXy08YkKaLwhZfuu5MBXmymOBTe2kPote0UQw2W0XeUzO8mp8RSvoWdFDJXZ0uiJP0fcBlc_inz2tWT9vnTwc-qp0-BuFkj6vl66CIbt-fF4MjCymt");'>
+</div>
+</div>
+</header>
+<div class="flex flex-1 flex-col lg:flex-row">
+<!-- Sidebar -->
+<aside class="w-full lg:w-64 border-r border-primary/10 bg-white dark:bg-slate-900 p-4 shrink-0">
+<nav class="flex flex-col gap-2">
+<div class="mb-4">
+<p class="px-3 text-[10px] font-bold uppercase tracking-wider text-slate-400">Main Menu</p>
+</div>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-primary/5 rounded transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-sm font-medium">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-primary/5 rounded transition-colors" href="#">
+<span class="material-symbols-outlined">work</span>
+<p class="text-sm font-medium">Jobs</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 bg-primary text-white rounded shadow-md shadow-primary/20" href="#">
+<span class="material-symbols-outlined">verified_user</span>
+<p class="text-sm font-medium">Quality &amp; Review</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-primary/5 rounded transition-colors" href="#">
+<span class="material-symbols-outlined">group</span>
+<p class="text-sm font-medium">Team Performance</p>
+</a>
+<div class="my-4 border-t border-primary/5"></div>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-primary/5 rounded transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<p class="text-sm font-medium">Settings</p>
+</a>
+</nav>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col bg-background-light dark:bg-background-dark p-4 lg:p-8 gap-6">
+<!-- Page Header -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+<div class="flex flex-col gap-1">
+<h1 class="text-2xl lg:text-3xl font-bold text-slate-900 dark:text-white">Quality Analytics</h1>
+<p class="text-slate-500 text-sm">Real-time monitoring of validation trends and reporting integrity.</p>
+</div>
+<div class="flex border-b border-slate-200 dark:border-slate-800 gap-6">
+<button class="border-b-2 border-primary text-primary pb-2 px-1 text-sm font-bold">Overview</button>
+<button class="text-slate-500 hover:text-primary pb-2 px-1 text-sm font-medium transition-colors">Failure Trends</button>
+<button class="text-slate-500 hover:text-primary pb-2 px-1 text-sm font-medium transition-colors">Team Stats</button>
+</div>
+</div>
+<!-- Metric Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-start">
+<p class="text-slate-500 text-sm font-medium uppercase tracking-wider">Avg Quality Score</p>
+<span class="material-symbols-outlined text-primary/50">analytics</span>
+</div>
+<div class="flex items-baseline gap-3">
+<p class="text-3xl font-bold text-slate-900 dark:text-white">94.2%</p>
+<span class="text-emerald-500 text-sm font-bold flex items-center">
+<span class="material-symbols-outlined text-sm">trending_up</span> 2.1%
+                        </span>
+</div>
+<p class="text-slate-400 text-xs">vs last 30 days average</p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-start">
+<p class="text-slate-500 text-sm font-medium uppercase tracking-wider">Validation Failures</p>
+<span class="material-symbols-outlined text-red-500/50">error</span>
+</div>
+<div class="flex items-baseline gap-3">
+<p class="text-3xl font-bold text-slate-900 dark:text-white">128</p>
+<span class="text-red-500 text-sm font-bold flex items-center">
+<span class="material-symbols-outlined text-sm">trending_up</span> 5.4%
+                        </span>
+</div>
+<p class="text-slate-400 text-xs">Reports requiring rework</p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-start">
+<p class="text-slate-500 text-sm font-medium uppercase tracking-wider">Pending Follow-up</p>
+<span class="material-symbols-outlined text-amber-500/50">history</span>
+</div>
+<div class="flex items-baseline gap-3">
+<p class="text-3xl font-bold text-slate-900 dark:text-white">42</p>
+<span class="text-emerald-500 text-sm font-bold flex items-center">
+<span class="material-symbols-outlined text-sm">trending_down</span> 12%
+                        </span>
+</div>
+<p class="text-slate-400 text-xs">Awaiting auditor review</p>
+</div>
+</div>
+<!-- Charts Section -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+<!-- Failure Trends Bar Chart Simulation -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-slate-900 dark:text-white font-bold">Validation Failures by Team</h3>
+<select class="text-xs bg-slate-100 dark:bg-slate-800 border-none rounded focus:ring-primary/20 cursor-pointer">
+<option>Last 7 Days</option>
+<option>Last 30 Days</option>
+</select>
+</div>
+<div class="flex items-end gap-3 h-48 w-full justify-between px-2">
+<div class="group relative flex flex-col items-center flex-1">
+<div class="w-full bg-primary/20 rounded-t-sm group-hover:bg-primary transition-colors h-[40%]"></div>
+<span class="text-[10px] text-slate-500 mt-2">Team A</span>
+</div>
+<div class="group relative flex flex-col items-center flex-1">
+<div class="w-full bg-primary/20 rounded-t-sm group-hover:bg-primary transition-colors h-[75%]"></div>
+<span class="text-[10px] text-slate-500 mt-2">Team B</span>
+</div>
+<div class="group relative flex flex-col items-center flex-1">
+<div class="w-full bg-primary/20 rounded-t-sm group-hover:bg-primary transition-colors h-[55%]"></div>
+<span class="text-[10px] text-slate-500 mt-2">Team C</span>
+</div>
+<div class="group relative flex flex-col items-center flex-1">
+<div class="w-full bg-primary/20 rounded-t-sm group-hover:bg-primary transition-colors h-[90%]"></div>
+<span class="text-[10px] text-slate-500 mt-2">Team D</span>
+</div>
+<div class="group relative flex flex-col items-center flex-1">
+<div class="w-full bg-primary/20 rounded-t-sm group-hover:bg-primary transition-colors h-[30%]"></div>
+<span class="text-[10px] text-slate-500 mt-2">Team E</span>
+</div>
+</div>
+</div>
+<!-- Common Issues Heatmap Simulation -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-slate-900 dark:text-white font-bold">Common Report Issues</h3>
+<span class="text-xs text-slate-500">Freq per 100 jobs</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-4">
+<span class="w-32 text-xs text-slate-500 truncate">Missing Photos</span>
+<div class="flex-1 h-6 bg-slate-100 dark:bg-slate-800 rounded-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 h-full w-[82%] bg-red-500/80"></div>
+<span class="absolute right-2 top-0.5 text-[10px] font-bold">82</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="w-32 text-xs text-slate-500 truncate">Incorrect Labeling</span>
+<div class="flex-1 h-6 bg-slate-100 dark:bg-slate-800 rounded-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 h-full w-[54%] bg-amber-500/80"></div>
+<span class="absolute right-2 top-0.5 text-[10px] font-bold">54</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="w-32 text-xs text-slate-500 truncate">Signature Missing</span>
+<div class="flex-1 h-6 bg-slate-100 dark:bg-slate-800 rounded-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 h-full w-[31%] bg-amber-400/80"></div>
+<span class="absolute right-2 top-0.5 text-[10px] font-bold">31</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="w-32 text-xs text-slate-500 truncate">GPS Mismatch</span>
+<div class="flex-1 h-6 bg-slate-100 dark:bg-slate-800 rounded-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 h-full w-[19%] bg-primary/40"></div>
+<span class="absolute right-2 top-0.5 text-[10px] font-bold">19</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="w-32 text-xs text-slate-500 truncate">Incomplete Specs</span>
+<div class="flex-1 h-6 bg-slate-100 dark:bg-slate-800 rounded-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 h-full w-[12%] bg-primary/20"></div>
+<span class="absolute right-2 top-0.5 text-[10px] font-bold">12</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pending Follow-up Table -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-primary/10 shadow-sm overflow-hidden">
+<div class="px-6 py-4 border-b border-primary/5 flex justify-between items-center">
+<h3 class="text-slate-900 dark:text-white font-bold">Pending Follow-up Items</h3>
+<button class="text-sm text-primary font-bold hover:underline">View All</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left text-sm">
+<thead class="bg-slate-50 dark:bg-slate-800 text-slate-500 uppercase text-[10px] font-bold">
+<tr>
+<th class="px-6 py-3">Job ID</th>
+<th class="px-6 py-3">Reported By</th>
+<th class="px-6 py-3">Validation Issue</th>
+<th class="px-6 py-3">Status</th>
+<th class="px-6 py-3">Days Aging</th>
+<th class="px-6 py-3 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-primary/5">
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<td class="px-6 py-4 font-medium text-primary">#JOB-22901</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-slate-200" data-alt="Profile placeholder"></div>
+<span>Alex Rivera</span>
+</div>
+</td>
+<td class="px-6 py-4 text-slate-500">Critical: Missing Site Exit Photos</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 text-[10px] font-bold">REJECTED</span>
+</td>
+<td class="px-6 py-4 text-red-500 font-bold">3 Days</td>
+<td class="px-6 py-4 text-right">
+<button class="px-3 py-1 bg-primary text-white text-xs font-bold rounded">Review</button>
+</td>
+</tr>
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<td class="px-6 py-4 font-medium text-primary">#JOB-22845</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-slate-200" data-alt="Profile placeholder"></div>
+<span>Sarah Jenkins</span>
+</div>
+</td>
+<td class="px-6 py-4 text-slate-500">Incomplete Form: Asset Serial Num</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 text-[10px] font-bold">PENDING FIX</span>
+</td>
+<td class="px-6 py-4">1 Day</td>
+<td class="px-6 py-4 text-right">
+<button class="px-3 py-1 bg-primary text-white text-xs font-bold rounded">Review</button>
+</td>
+</tr>
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<td class="px-6 py-4 font-medium text-primary">#JOB-22731</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-slate-200" data-alt="Profile placeholder"></div>
+<span>David Wu</span>
+</div>
+</td>
+<td class="px-6 py-4 text-slate-500">Blurry Documentation (Panel Board)</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 text-[10px] font-bold">REJECTED</span>
+</td>
+<td class="px-6 py-4">5 Days</td>
+<td class="px-6 py-4 text-right">
+<button class="px-3 py-1 bg-primary text-white text-xs font-bold rounded">Review</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>
