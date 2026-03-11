@@ -49,28 +49,28 @@
 <div class="flex flex-col gap-3 p-4 bg-white dark:bg-slate-900/50 m-4 rounded-xl border border-primary/10">
 <div class="flex gap-6 justify-between items-center">
 <p class="text-slate-900 dark:text-slate-100 text-base font-semibold leading-normal">Readiness Score</p>
-<p class="text-primary text-lg font-bold leading-normal">75%</p>
+<p class="text-primary text-lg font-bold leading-normal">58%</p>
 </div>
 <div class="rounded-full bg-primary/10 h-3 overflow-hidden">
-<div class="h-full rounded-full bg-primary" style="width: 75%;"></div>
+<div class="h-full rounded-full bg-primary" style="width: 58%;"></div>
 </div>
 <p class="text-slate-500 dark:text-slate-400 text-sm font-medium flex items-center gap-1">
 <span class="material-symbols-outlined text-sm text-amber-500">warning</span>
-                3 critical items require attention
+                3 capacitor-repair blockers must be resolved before submission
             </p>
 </div>
 <!-- Critical Errors Section -->
 <div class="px-4">
 <h3 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-wider mb-3">Critical Validation Blocks</h3>
-<!-- Error 1: Missing Photo -->
+<!-- Error 1: Missing Required Completion Evidence -->
 <div class="p-4 mb-4 bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-900/30 rounded-xl">
 <div class="flex items-start justify-between gap-4">
 <div class="flex flex-col gap-2 flex-1">
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-red-600 dark:text-red-400">error</span>
-<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Missing Photo</p>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Missing Required Completion Evidence</p>
 </div>
-<p class="text-slate-600 dark:text-slate-400 text-sm leading-normal">Equipment overview photo and completion photo are mandatory for compliance before submission.</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-normal">Completion photo after successful cooling cycle is missing for AC-402. Submission requires both overview and post-repair completion evidence.</p>
 <button class="mt-2 flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-9 px-4 bg-primary text-white gap-2 text-sm font-medium transition-opacity hover:opacity-90">
 <span class="material-symbols-outlined text-lg">add_a_photo</span>
 <span>Upload Now</span>
@@ -81,18 +81,31 @@
 </div>
 </div>
 </div>
-<!-- Error 2: Mandatory Measurement -->
+<!-- Error 2: Missing Post-Repair Measurement Pair -->
 <div class="p-4 mb-4 bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-900/30 rounded-xl">
 <div class="flex flex-col gap-3">
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-red-600 dark:text-red-400">straighten</span>
-<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Mandatory Measurement</p>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Missing Post-Repair Measurement Pair</p>
 </div>
-<p class="text-slate-600 dark:text-slate-400 text-sm">Measurement for <span class="font-bold">Discharge Pressure</span> has not been recorded in the service log.</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Post-repair pressure normalization is incomplete. Capture both <span class="font-bold">Low Side After</span> and <span class="font-bold">High Side After</span> values to validate capacitor replacement outcome.</p>
 <div class="flex gap-2">
-<input class="flex-1 bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700 rounded-lg text-sm px-3 focus:ring-primary focus:border-primary" placeholder="Enter discharge pressure (PSIG)" type="number"/>
+<input class="flex-1 bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700 rounded-lg text-sm px-3 focus:ring-primary focus:border-primary" placeholder="Enter high side after (PSI)" type="number"/>
 <button class="bg-primary/10 text-primary px-4 py-2 rounded-lg text-sm font-bold">Save Progress</button>
 </div>
+</div>
+</div>
+</div>
+<!-- Error 3: Missing Repair Narrative -->
+<div class="px-4">
+<div class="p-4 mb-4 bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-900/30 rounded-xl">
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-red-600 dark:text-red-400">description</span>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Missing Repair Action Narrative</p>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Action notes must explicitly state capacitor removal, capacitor installation, and successful full cooling cycle test for FV-88421.</p>
+<button class="w-fit bg-primary/10 text-primary px-4 py-2 rounded-lg text-sm font-bold">Add Action Notes</button>
 </div>
 </div>
 </div>
@@ -104,8 +117,8 @@
 <div class="flex items-start gap-3">
 <span class="material-symbols-outlined text-amber-600 dark:text-amber-400 mt-0.5">inventory_2</span>
 <div class="flex flex-col gap-1">
-<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Parts Consistency Warning</p>
-<p class="text-slate-600 dark:text-slate-400 text-sm">Parts used (run capacitor 45uF) must match the diagnosis of degraded run capacitor with abnormal pressure behavior.</p>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Parts Traceability Warning</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Installed run capacitor requires traceability evidence. Add part label/packaging photo to confirm SKU CAP-AC402-45UF in the submitted repair record.</p>
 <div class="flex gap-3 mt-3">
 <button class="text-amber-700 dark:text-amber-400 text-sm font-bold underline decoration-amber-300">Update Evidence</button>
 <button class="text-amber-700 dark:text-amber-400 text-sm font-bold underline decoration-amber-300">Mark Reviewed</button>
