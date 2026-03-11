@@ -32,3 +32,19 @@ This repository contains HTML screens for Fieldvance, a mobile-first AI workflow
 - validation logic matches captured evidence
 - report content matches performed work
 - screenshots are credible enough for formal documentation use
+
+## Visual restyle direction
+- Match the uploaded Fieldvance brand reference boards
+- Use a corporate-industrial visual language, not a generic startup SaaS style
+- Primary palette:
+  - Field Service Slate / deep blue-gray for core surfaces
+  - Precision Teal for active highlights, progress, AI/workflow accents
+  - Safety Orange only for warnings, validation blockers, urgent items, and critical CTAs
+  - White / very light gray for canvas backgrounds
+- Typography:
+  - Headings: Montserrat
+  - Body/UI text: Inter
+- Keep the product focused on HVAC/plumbing field operations in Spain/EU
+- Preserve the existing product flow and content logic while upgrading visual language
+- Prefer sharper, more structured enterprise layouts over soft playful SaaS styling
+- Avoid neon, glassmorphism, consumer-app aesthetics, or futuristic AI visuals
