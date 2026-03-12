@@ -8,17 +8,38 @@
     body {
       min-height: max(884px, 100dvh);
       font-family: Inter, sans-serif;
-      background-color: #f3f5f7;
+      background-color: #eef2f5;
       color: #0f172a;
       letter-spacing: 0.01em;
     }
     h1, h2, h3, h4, h5, h6 {
       font-family: Montserrat, Inter, sans-serif;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.012em;
+    }
+    header, aside {
+      background-color: #1f2a37 !important;
+      border-color: rgba(148, 163, 184, 0.22) !important;
+    }
+    header h2, header p, header a, header span,
+    aside h1, aside p, aside a, aside span {
+      color: #d7e1ea;
+    }
+    header .text-primary, aside .text-primary {
+      color: #2bb6ab !important;
+    }
+    header input, header .bg-slate-100, header .bg-slate-800,
+    aside .bg-slate-50, aside .bg-slate-800\/50 {
+      background-color: #273445 !important;
+      color: #d7e1ea !important;
+      border-color: rgba(148, 163, 184, 0.2) !important;
+    }
+    main {
+      background: #eef2f5 !important;
     }
     .bg-white, .dark .bg-slate-900, .dark .bg-slate-950 {
-      border: 1px solid rgba(148, 163, 184, 0.22);
-      box-shadow: 0 10px 24px -16px rgba(15, 23, 42, 0.26);
+      background-color: #ffffff !important;
+      border: 1px solid rgba(15, 23, 42, 0.1) !important;
+      box-shadow: 0 14px 32px -22px rgba(15, 23, 42, 0.5) !important;
     }
     .bg-primary, .hover\:bg-primary\/90:hover {
       background-color: #0f766e !important;
@@ -29,13 +50,39 @@
     .focus\:ring-primary\/50:focus {
       --tw-ring-color: rgb(15 118 110 / 0.4) !important;
     }
-    .border-primary\/20, .border-primary\/30, .border-primary\/40 {
-      border-color: rgb(15 118 110 / 0.32) !important;
+    .border-primary\/10, .border-primary\/20, .border-primary\/30, .border-primary\/40 {
+      border-color: rgb(15 118 110 / 0.28) !important;
     }
-    .bg-orange-500, .bg-amber-500, .text-orange-600, .text-amber-600,
+    .text-slate-500, .text-slate-600 {
+      color: #475569 !important;
+    }
+    table thead {
+      background: #e7eef3 !important;
+    }
+    table th {
+      font-family: Montserrat, Inter, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #334155;
+    }
+    table tbody tr {
+      border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+    }
+    .bg-red-50, .bg-yellow-50, .bg-amber-50,
+    .bg-red-100, .bg-yellow-100, .bg-amber-100 {
+      background-color: rgba(194, 65, 12, 0.1) !important;
+    }
+    .text-red-500, .text-red-600, .text-red-700, .text-red-900,
+    .text-yellow-600, .text-yellow-700, .text-yellow-900,
+    .text-amber-500, .text-amber-600, .text-amber-700, .text-amber-900,
+    .text-orange-600, .text-orange-700 {
+      color: #c2410c !important;
+    }
+    .border-red-100, .border-red-200, .border-yellow-100, .border-amber-100,
     .border-orange-300, .border-amber-300 {
-      color: #c2410c;
-      border-color: rgb(194 65 12 / 0.35);
+      border-color: rgba(194, 65, 12, 0.35) !important;
     }
   </style>
 
